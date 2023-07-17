@@ -192,7 +192,11 @@ nav ul li{
     display: flex;
     margin-top: 80px;
     justify-content: space-around;
+    align-items: center;
     filter: grayscale(100%);
+}
+.sponspors-img img{
+    width: 167px;
 }
 /* sponspors end  */
 
