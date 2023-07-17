@@ -14,7 +14,7 @@
     font-size: 1rem;
     font-weight: 600;
 }
-.main{
+.main, footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -125,7 +125,7 @@ nav ul li{
 }
 .list-item{
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
 }
@@ -139,13 +139,72 @@ nav ul li{
 }
 .features-list img {
     width: 100%;
+    height: 100%;
 }
 .features-list-container{
     padding-right: 80px;
 }
 /* features-list end  */
 
+/* fact item start  */
+.fact-item{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.fact-item-box{
+    border: 2px solid #FF900E;
+    border-radius: 5px;
+    padding: 20px 40px;
+    text-align: center;
+}
+.some-facts-title{
+    color: #131313;
+    font-weight: 700px;
+    font-size: 2.5rem;
+}
+.some-facts-description{
+    max-width: 542px;
+}
+.some-facts{
+    margin-top: 120px;
+}
+/* fact item end */
 
+/* sponspors start  */
+.sponspors{
+    margin-top: 120px;
+}
+.sponspors-contant{
+    text-align: center;
+}
+.sponspors-title{
+    color: #131313;
+    font-weight: 700px;
+    font-size: 2.5rem;
+}
+.sponspors-description{
+    color:#727272;
+    max-width: 542px;
+    margin: auto;
+}
+.sponspors-img{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+    filter: grayscale(100%);
+}
+/* sponspors end  */
+
+/* footer start  */
+footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+    font-style: 1rem;
+}
+/* footer end  */
 
 
 
@@ -175,6 +234,17 @@ nav ul li{
     .features-list-container{
         padding: 10px;
     }
+    .fact-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponspors-img{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .sponspors-img img{
+        padding: 30px 60px;
+    }
 }
 /* tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -186,5 +256,15 @@ nav ul li{
     }
     .a{
         text-align: center;
+    }
+    .features-list img {
+        width: 100%;
+        height: 100%;
+    }
+    .features-list-container{
+        padding: 10px;
+    }
+    .features-list{
+        flex-direction: column;
     }
 }
