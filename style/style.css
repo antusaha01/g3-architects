@@ -11,8 +11,12 @@
     border: none;
     color: white;
     margin: auto;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* common style end */
 
@@ -77,3 +81,65 @@ nav ul li{
     margin-top: 50px;
 }
 /* banner end  */
+
+/* features start  */
+.features{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.features-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.features-info-container{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.features-title{
+    font-size: 2rem;
+    color: #131313;
+}
+.features-description{
+    color: #727272;
+}
+/* features end */
+
+
+
+
+
+/* responsive style  */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-right: 40px;
+    }
+    .features{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .features-img-container{
+        display: grid;
+        grid-template-columns: none;
+    }
+}
+/* tablet devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, .features{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-right: auto;
+    }
+    .a{
+        text-align: center;
+    }
+}
